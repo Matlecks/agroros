@@ -1,0 +1,242 @@
+img {max-width: 100%;}
+
+.catalog.product_page .section_content .catalog_element #slider.semena .slides li a {
+    /* background-size: contain; */
+    background-size: auto 315px;
+}
+
+.sections_bottom_wrapper .sections_block_wrapper.solutions .sol_animal.semena {
+    width: 103px;
+    height: 130px;
+    background-size: cover;
+}
+
+.sections_bottom_wrapper.semena .sections_block_wrapper.solutions {min-height: 300px;}
+.solution_inner .sections_bottom_wrapper.semena .sections_block_wrapper.solutions {
+    min-height: 340px;
+    padding-top: 30px;
+}
+
+.solution_inner .sections_bottom_wrapper.semena .sections_block_wrapper.solutions .dontsplit {
+    margin-top: 0px;
+}
+
+.slider_menu .wrapper {
+    float: left;
+    padding: 15px 15px 15px 45px;
+}
+
+.catalog.product_page .section_content .catalog_element .calculator .calc_row .calc_input_wrap .animal_type {cursor: default;}
+.catalog.product_page .section_content .catalog_element .calculator .calc_row .calc_input_wrap .animal_type.cattle:hover {
+    background-position: -105px -3px;
+}
+.catalog.product_page .section_content .catalog_element .calculator .calc_row .calc_input_wrap .animal_type.cattle.active,
+.catalog.product_page .section_content .catalog_element .calculator .calc_row .calc_input_wrap .animal_type.cattle.active:hover {
+    background-position: -105px -43px;
+}
+
+.catalog.product_page .section_content .catalog_element .calculator .calc_row .calc_input_wrap .animal_type.bird:hover {
+    background-position: 0px -3px;
+}
+.catalog.product_page .section_content .catalog_element .calculator .calc_row .calc_input_wrap .animal_type.bird.active,
+.catalog.product_page .section_content .catalog_element .calculator .calc_row .calc_input_wrap .animal_type.bird.active:hover {
+    background-position: 0px -43px;
+}
+
+.catalog.product_page .section_content .catalog_element .calculator .calc_row .calc_input_wrap .animal_type.pig:hover {
+    background-position: -42px -3px;
+}
+.catalog.product_page .section_content .catalog_element .calculator .calc_row .calc_input_wrap .animal_type.pig.active,
+.catalog.product_page .section_content .catalog_element .calculator .calc_row .calc_input_wrap .animal_type.pig.active:hover {
+    background-position: -42px -43px;
+}
+
+.front_head_mobile .text .header,
+.front_head_mobile .text .header a {color: rgb(0,0,0);}
+
+.section_content .companies_front a {min-width: 262px;}
+
+.webform.get_price .form_row .input_wrap input {
+    /* display: inline; */
+    padding: 0;
+    height: 20px;
+    line-height: 20px;
+}
+
+.header .header_menu li a {font-family: "Circe-Bold", sans-serif;}
+.press_center_detail img {max-width: 100%;}
+
+.sections_bottom_wrapper .sections_block_wrapper.solutions .sol_animal.semena {bottom: 35px;}
+
+.personnel .section .person .image {
+    width: 94px;
+    height: 94px;
+    background: #fff;
+}
+.personnel .section .person .image img {
+    background: #fff;
+    border-radius: 94px 94px 94px 94px;
+    -moz-border-radius: 94px 94px 94px 94px;
+    -webkit-border-radius: 94px 94px 94px 94px;
+}
+.personnel .section .person .image:after {
+    background: none; 
+}
+
+.personnel .section .person .job {
+    margin: 0 0 5px 109px;   
+}
+
+@media all and (max-width: 1270px){
+    .slider_menu > div:nth-child(1),
+    .slider_menu > div:nth-child(2),
+    .slider_menu > div:nth-child(3)
+    .slider_menu > div:nth-child(4),
+    .slider_menu .wrapper.form_button {
+        width: 20% !important;
+    }
+
+    .slider_menu .wrapper {padding: 5px;}
+
+    .header .header_menu li a {
+        padding: 3px 5px;
+    }
+}
+
+@media all and (max-width:970px){
+    .catalog.product_page .section_content .catalog_element #slider.semena .slides li a {
+        background-size: auto 235px;
+    }
+
+    .slider_menu > div:nth-child(1),
+    .slider_menu > div:nth-child(2),
+    .slider_menu > div:nth-child(3)
+    .slider_menu > div:nth-child(4),
+    .slider_menu .wrapper.form_button {
+        width: 50% !important;
+    }
+    .slider_menu > div:nth-child(4) {padding-right:5px;}
+
+    .slider_menu {margin: -350px 5px 0 5px;}
+    .slider_menu .wrapper.form_button {
+        width: 100% !important;
+        padding-right: 5px;
+    }
+
+    .header .header_menu li a {
+        padding: 3px 10px;
+    }
+}
+
+@media all and  (max-width: 610px){
+    .slider_menu > div:nth-child(1),
+    .slider_menu > div:nth-child(2),
+    .slider_menu > div:nth-child(3),
+    .slider_menu > div:nth-child(4),
+    .slider_menu .wrapper.form_button {
+        width: 100% !important;
+        padding: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .slider_menu .wrapper {
+        padding: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .slider_menu {margin: -600px 5px 100px 5px;}
+
+    /* Поиск в шапке */
+
+    .header .header_form input[type="submit"],
+    .header .header_form a[type="submit"],
+    .header.black .header_form input[type="submit"],
+    .header.black .header_form a[type="submit"] {
+        color: transparent;
+        width: 40px;
+        height: 33px;
+        background-size: 16px;
+        background: url(../images/icon_search.png) left 5px no-repeat;
+    }
+
+    .header .header_form input[type="submit"],
+    .header .header_form a[type="submit"]{
+        background-position: 10.5px -49px;
+    }
+    .header.black .header_form input[type="submit"],
+    .header.black .header_form a[type="submit"] {
+        background-position: 10.5px -77px;
+    } 
+
+    .header .header_search .submit_wrap {margin: -33px 35px 0 0;}
+    .header .header_search form {max-height:35px;}
+    .header .header_search #title-search-input {
+        font-size: 20px;
+        line-height: 24px;
+        height: 35px;
+        border: none;
+    }
+
+    .header .header_search .search_control.search_opened {
+        background: url(../images/close_14_white.png) left 2px no-repeat;
+    }
+    .header.black .header_search .search_control.search_opened {
+        background: url(../images/close_14_black.png) left 2px no-repeat;
+    }
+
+    .header .logo,
+    .header.black .logo {
+        height: 35px;
+    }
+    .header .header_search .search_control {margin-top: 7px;}
+    .header .header_search {margin-top: 0px;}
+
+    .title-search.opened {
+        margin-bottom: -7px;
+        margin-top: 7px;
+    }
+    .header .header_search .title-search.opened .search_control {margin-top: 2px;}
+
+    /* Страница поиска */
+    .search-page-title {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .search-query-page {
+        font-family: inherit;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold;
+    }
+
+    .search-page table tr td:nth-child(1),
+    .search-page table tr td:nth-child(2) {display:none;}
+    .search-page table tr td:nth-child(3) {width: auto !important;}
+    .search-page table tr td:nth-child(5) {width: 47px;}
+
+    div.search-page form input.search-button {
+        color: transparent;
+        width: 47px;
+        height: 32px;
+        background-image: url(../images/icon_search.png);
+        background-position: center -48px;
+        background-repeat: no-repeat;
+    }
+
+    .search-advanced-result .search-result {
+        color: #000;
+        font-size: 14px;
+        margin: 20px 0 0 0;
+    }
+
+    .search-result.container-search .search-button {
+        font-size: 16px !important;
+        line-height: 41px;
+        padding: 0;
+        text-align: center;
+        width: 171px;
+        height: 41px;
+    }
+
+}

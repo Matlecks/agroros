@@ -1,0 +1,507 @@
+.contacts {
+
+	position: relative;
+
+	.company_contacts {
+		float: left;
+		width: 33.33%;
+			
+		&.num_0 {
+			@media all and (max-width:$small){padding: 0 20px 0 0;}
+			@media all and (max-width:$mobile){padding: 0;}
+		}
+			
+		&.num_1 {
+			padding: 0 0 0 40px;
+			
+			@media all and (max-width:$small){padding: 0 10px;}
+			@media all and (max-width:$mobile){padding: 0;}
+		}
+		
+		&.num_2 {
+			@media all and (max-width:$small){padding: 0 0 0 20px;}
+			@media all and (max-width:$mobile){padding: 0;}
+		}
+		
+		@media all and (max-width:$mobile){
+			width: 100%;
+			float: none;
+			margin: 0 0 50px 0;
+		}
+		
+		h3 {
+			margin: 10px 0 15px 0;
+			
+			@media all and (max-width:$mobile){margin: 5px 0 15px 0;}
+		}
+		
+		.production {
+		
+			.images {
+			
+				& > div {
+					float: left;
+					margin: 0 10px 0 0;
+					height: 27px;
+					position: relative;
+					
+					.inner {
+						position: absolute;
+						bottom: 0;
+						background-image: url(images/production_contacts.png);
+						background-repeat: no-repeat;
+					}
+				}
+				
+				.cattle {
+					width: 41px;
+					
+					.inner {
+						width: 41px;
+						height: 27px;
+						background-position: 0 0;
+					}
+					
+					&.red {
+						.inner {
+							background-position: 0 -27px;
+						}
+					}
+
+				}
+				
+				.pigs {
+				
+					width: 36px;
+				
+					.inner {
+						width: 36px;
+						height: 21px;
+						background-position: -43px 0;
+					}
+					
+					&.red {
+						.inner {
+							background-position: -43px -27px;
+						}
+					}
+				}
+				
+				.birds {
+				
+					width: 20px;
+					
+					.inner {
+						width: 20px;
+						height: 23px;
+						background-position: -85px 0;
+					}
+				
+					&.red {
+						.inner {
+							background-position: -85px -27px;
+						}
+					}
+				}
+				
+				.seeds {
+				
+					width: 21px;
+				
+					.inner {
+						width: 21px;
+						height: 26px;
+						background-position: -111px 0;
+					}
+					
+					&.red {
+						.inner {
+							background-position: -111px -27px;
+						}
+					}
+				}
+			}
+		
+			.text {
+				clear: both;
+				font-size: 10px;
+				line-height: 12px;
+				text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+				text-transform: uppercase;
+				padding-top: 6px;
+			}
+		}
+		
+		.address {
+			width: 200px;
+			font-size: 15px;
+			line-height: 22px;
+			
+			@media all and (max-width:$mobile){
+				font-size: 14px;
+				line-height: 20px;
+			}
+			
+			span {
+				cursor: pointer;
+				background-repeat: repeat-x;
+				background-position: center 1.2em;
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAABCAYAAAAW/mTzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkY2RDQ0NzBDODUzMTFFN0FFMzBGQUNCOUEzNkUxQzEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkY2RDQ0NzFDODUzMTFFN0FFMzBGQUNCOUEzNkUxQzEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCRjZENDQ2RUM4NTMxMUU3QUUzMEZBQ0I5QTM2RTFDMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCRjZENDQ2RkM4NTMxMUU3QUUzMEZBQ0I5QTM2RTFDMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvdQSI0AAAAdSURBVHjaYlSSl49lYGD4f+/hwyVAdiSQzQ4QYABBdQXCmVk+egAAAABJRU5ErkJggg==');
+			}
+
+		}
+		
+		.mail {
+			font-size: 15px;
+			line-height: 21px;
+			margin-top: 10px;
+			
+			@media all and (max-width:$mobile){
+				font-size: 14px;
+				line-height: 19px;
+			}
+		}
+		
+		.phones {
+			margin-top: 10px;
+			font-size: 15px;
+			line-height: 26px;
+			
+			@media all and (max-width:$mobile){
+				font-size: 14px;
+				line-height: 24px;
+			}
+			
+			table {
+			
+				@media all and (max-width:$small){display: block;}
+				@media all and (max-width:$mobile){display: table;}
+			
+				tbody {
+				
+					@media all and (max-width:$small){display: block;}
+					@media all and (max-width:$mobile){display: table;}
+				
+					tr {
+					
+						@media all and (max-width:$small){display: block;}
+						@media all and (max-width:$mobile){display: table-row;}
+					
+						td {
+							&:first-of-type {
+								padding: 0 7px 0 0;
+								@media all and (max-width:$small){padding: 0;}
+								@media all and (max-width:$mobile){padding: 0 7px 0 0;}
+							}
+							&:last-of-type {
+								padding: 0 0 0 7px;
+								@media all and (max-width:$small){padding: 0;}
+								@media all and (max-width:$mobile){padding: 0 0 0 7px;}
+							}
+							
+							@media all and (max-width:$small){
+								display: block;
+								width:100%;
+							}
+							@media all and (max-width:$mobile){
+								display: table-cell;
+								width: auto;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.personnel {
+
+	position: relative;
+	margin: 25px 0 0 0;
+	
+	.section {
+	
+		float: left;
+		width: 50%;
+		
+		@media all and (max-width:$mobile){
+			float: none;
+			width: 100%;
+		}
+		
+		h3 {
+			margin-left: 62px;
+			
+			@media all and (max-width:$small){margin-left: 0px;}
+			@media all and (max-width:$small){margin: 20px 0 15px 0;}
+		}
+		
+		.person {
+		
+			margin: 0 0 10px 0;
+			clear: both;
+			
+			@media all and (max-width:$small){margin: 0 0 20px 0;}
+			
+			.job {
+				font-size: 10px;
+				line-height: 12px;
+				text-transform: uppercase;
+				margin: 0 0 5px 62px;
+				padding: 0 30px 0 0;
+				text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+				max-width: 160px;
+				
+				@media all and (max-width:$small){
+					max-width: 220px;
+					font-weight: 400; 
+					@include font-circe('Circe-Regular');
+				}
+			}
+			
+			.image {
+			
+				width: 47px;
+				height: 47px;
+				position: relative;
+				float: left;
+				margin: 0 15px 0 0;
+				background: #e6e6e7;
+				
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 47px;
+					height: 47px;
+					background: url(images/person_frame.png) center center no-repeat;
+				}	
+			}
+			
+			.info {
+				float: left;
+				width: 160px;
+				padding: 0 30px 0 0;
+				font-size: 15px;
+				line-height: 18px;
+				
+				@media all and (max-width:$small){
+					width: 240px;
+					float: none;
+					margin: 0 0 0 62px;
+					padding: 0 20px 0 0;
+					@include font-circe('Circe-Regular');
+				}
+				
+				@media all and (max-width:$mobile){
+					width: auto;
+					padding: 0;	
+				}
+			}
+			
+			.mail {
+				float: left;
+				width: 170px;
+				padding: 0 30px 0 0;
+				font-size: 15px;
+				line-height: 18px;
+				
+				.phone {
+					width:200px;
+					padding: 0;
+				}
+				
+				@media all and (max-width:$medium){width: 240px;}
+				
+				@media all and (max-width:$small){
+					width: 240px;
+					float: none;
+					margin: 0 0 0 62px;
+					padding: 0 20px 0 0;
+					text-shadow: none;
+					
+					@include font-circe('Circe-Regular');
+				}
+				
+				@media all and (max-width:$mobile){
+					width: auto;
+					padding: 0;	
+				}	
+			
+			}
+			
+			.phone {
+				float: left;
+				width: 160px;
+				padding: 0 30px 0 0;
+				font-size: 15px;
+				line-height: 18px;
+				
+				@media all and (max-width:$small){
+					width: 240px;
+					float: none;
+					margin: 0 0 0 62px;
+					padding: 0 20px 0 0;
+				}
+				
+				@media all and (max-width:$mobile){
+					width: auto;
+					padding: 0;	
+				}
+			}
+		}
+	}
+}
+
+.contacts_map {
+
+	clear: both;
+	margin-top: 40px;
+
+	#map {
+		width: 818px;
+		height: 415px;
+		float: left;
+		position: relative;
+		border: solid 1px #ede7d9;
+		@include border-radius(2px);
+		
+		@media all and (max-width:$medium){width: 620px;}
+		@media all and (max-width:$small){width: 100%;}
+	}
+	
+	.feedback_form {
+		width: 415px;
+		height: 415px;
+		float:right;
+		border: solid 1px #ede7d9;
+		background-color: #fcf9ea;
+		padding: 20px;
+		@include border-radius(2px);
+		
+		@media all and (max-width:$medium){
+			width: 310px;
+			padding: 20px 15px 15px 15px;
+		}
+		
+		@media all and (max-width:$small){
+			width:100%;
+			margin: 30px 0 0 0;
+			padding: 20px 20px 40px 20px;
+		}
+		
+		@media all and (max-width:$mobile){
+			height: auto;
+			padding: 20px 20px 30px 20px;
+		}
+		
+		h3 {margin-top: 0;}
+		
+		.form_row {
+		
+			position: relative;
+		
+			textarea {
+				width: 100%;
+				height: 150px;
+				border: solid 1px #eaeaeb;
+				margin: 0 0 10px 0;
+				padding: 10px;
+				font-size: 15px;
+				line-height: 18px;
+				@include border-radius-right(2px);
+				
+				@media all and (max-width:$small){max-width: 480px;}
+			}
+			
+			&.text {
+				label {display: none;}
+			}
+			
+			&.name {
+				border: solid 1px #eaeaeb;
+				border-bottom: none;
+				@include border-radius-right(2px);
+				
+				@media all and (max-width:$small){max-width: 320px;}
+			}
+			
+			&.mail {@extend .name;}
+			&.phone {
+				@extend .name;
+				border-bottom: solid 1px #eaeaeb;
+			}
+			
+			.input_wrap {
+						
+				margin: 0 0 0 115px;
+			
+				input[type="text"]{
+					height: 30px;
+					border: none;
+					width: 100%;
+					font-size: 15px;
+				}
+			
+			}
+						
+			label {
+				font-size: 15px;
+				float:left;
+				width: 115px;
+				background: #fff;
+				height: 30px;
+				line-height: 32px;
+				padding: 0 0 0 10px;
+			}
+			
+			.button_green {
+				float:left;
+				background: transparent;
+				width: 140px;
+				height: 42px;
+				line-height: 40px;
+				border: solid 1px #a0c043;
+				color: #a0c043;
+				padding: 0;
+				margin: 20px 0 0 0;
+				
+				&:disabled {
+					border: solid 1px #cccccc;
+					color: #cccccc;
+					
+					&:hover {background: transparent;}
+				}
+				
+				&:hover {background: #eaffc7;}
+				
+				@include border-radius-right(2px);
+				
+				@media all and (max-width:$medium){width: 127px;}
+				@media all and (max-width:$mobile){float: none;}
+			}
+
+			&.error {
+				&.mail {border: solid 1px red;}
+				textarea {border-color: red;}
+			}
+		}
+		
+		.privacy {
+			float:left;
+			font-size: 13px;
+			line-height: 16px;
+			margin: 25px 0 0 20px;
+			max-width: 130px;
+			
+			@media all and (max-width:$medium){margin: 25px -5px 0 15px;}
+			@media all and (max-width:$mobile){
+				margin: 20px 0 0 0;
+				float: none;
+				max-width: 100%;
+			}
+		}
+	}
+}

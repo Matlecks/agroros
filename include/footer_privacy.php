@@ -1,0 +1,1 @@
+<a href="/soglashenie-polzovatelia/">Соглашение пользователя</a>

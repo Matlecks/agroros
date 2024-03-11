@@ -1,0 +1,621 @@
+/*
+** Страница производителя
+*/
+
+.company_page {
+
+	@include font-circe('Circe-Light');
+	font-size: 17px;
+	line-height: 25px;
+	margin: 0 0 80px 0;
+	text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+
+	@media all and (max-width:$medium){margin: 0 0 65px 0;}
+	@media all and (max-width:$small){
+		line-height: 22px;
+		max-width: 500px;
+		margin: 0 0 -15px 0;
+	}
+	@media all and (max-width:$mobile){margin: 0 0 -85px 0;}
+
+	.logo {
+
+		padding: 0 0 0 60px;
+
+		img {width:200px;}
+
+		@media all and (max-width:$medium){
+			padding: 0 40px 0 0;
+			img {float:right;}
+		}
+
+		@media all and (max-width:$small){
+			padding: 0;
+			img {
+				float: none;
+				width: 180px;
+				margin-bottom: 20px;
+			}
+		}
+
+		@media all and (max-width:$mobile){
+			img {
+				height: 90px;
+				width: auto;
+			}
+		}
+	}
+
+	.text {
+		@media all and (max-width:$medium){padding: 0;}
+	}
+
+	.catalog_sections {
+
+		h2 {
+			@media all and (max-width:$mobile){margin-top: 40px;}	
+		}
+
+		a {
+			display: inline-block;
+			width: 100%;
+			margin: 0 0 20px 0;
+		}
+	}
+}
+
+/*
+** -------------------------
+*/
+
+.page_banner {
+	position: relative;
+	z-index:5;
+	height: 632px;
+	background: url(images/about_us_bg_v2.jpg) top right no-repeat;
+	margin: -105px -15px 0 -15px;
+
+	@media all and (max-width:$medium){margin: -108px -15px 0 -15px;}
+	@media all and (max-width:$small){
+		// background: url(images/about_us_bg_small.jpg) top left no-repeat;
+		height: 350px;
+		margin: -119px 0 0 0;
+		background-position: top center;
+    background-size: cover;
+	}
+
+	@media all and (max-width:$mobile){
+		height: 460px;
+	}
+
+	.banner_content {
+		width: 1250px;
+		margin: 0 auto;
+		padding: 450px 0 0 0;
+
+		@media all and (max-width:$medium){
+			width: 940px;
+		}
+		@media all and (max-width:$small){
+			padding: 180px 0 0 0;
+			width: 605px;
+		}
+
+		@media all and (max-width:$mobile){
+	    padding: 235px 15px 0 15px;
+			width: 100%;
+		}
+	}
+
+	.darken {
+		height: 203px;
+		width:100%;
+		position: absolute;
+		top: 0;
+		background: url(images/about_us_darken.png) top left repeat-x;
+
+		@media all and (max-width:$small){display:none;}
+	}
+
+	.text {
+		color: #fff;
+		font-size: 20px;
+		line-height: 24px;
+
+		// position: absolute;
+		// left:30px;
+		// bottom: 140px;
+		max-width: 400px;
+		margin-bottom: 15px;
+
+		@include font-circe('Circe-Light');
+
+		@media all and (max-width:$small){
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 5px;
+			// left: 15px;
+			// bottom: 135px;
+		}
+
+		@media all and (max-width:$mobile){
+			// bottom: 164px;
+			max-width: 270px;
+		}
+	}
+
+	h1 {
+		color: #fff;
+		// position: absolute;
+		// left:30px;
+		// bottom: 40px;
+
+		@media all and (max-width:$small){
+			// left: 15px;
+			// bottom: 30px;
+			width: 270px;
+		}
+
+		@media all and (max-width:$mobile){
+			// bottom: 20px;
+			width: 240px;
+		}
+	}
+}
+
+.not_front {
+	.content {
+
+		&.page_banner_content {
+			margin-top: 0px;
+		}
+	}
+}
+
+.section_content {
+	.page_banner_content {
+
+		.about_us_page {
+			padding: 0;
+
+			& > * {
+				text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+				@include font-circe('Circe-Light');
+			}
+
+			.text_big {
+				margin: 35px 0 45px 0;
+
+				@media all and (max-width:$small){margin: 35px 0 30px 0;}
+				@media all and (max-width:$mobile){margin: 50px 0 35px 0;}
+
+				& > * {
+					font-size: 22px;
+					line-height: 26px;
+
+					@media all and (max-width:$small){
+						font-size: 20px;
+						line-height: 24px;
+					}
+				}
+			}
+
+			.text_small {
+
+				& > * {
+					font-size: 17px;
+					line-height: 25px;
+
+					@media all and (max-width:$small){
+						font-size: 17px;
+						line-height: 22px;
+					}
+				}
+			}
+
+			.about_us_text {
+				max-width:827px;
+
+				@media all and (max-width:$medium){max-width: 705px;}
+				@media all and (max-width:$small){max-width: 540px;}
+				@media all and (max-width:$mobile){max-width: 100%;}
+
+				&.company_prefix {
+					h3 {
+						line-height: 35px;
+
+						@media all and (max-width:$small){
+							font-size: 22px;
+							line-height: 26px;
+						}
+					}
+
+					@media all and (max-width:$small){
+
+						max-width: 610px;
+						border-top: solid 1px #c8e099;
+						padding: 0 35px;
+						margin: 5px 15px 0 15px;
+					}
+
+					@media all and (max-width:$mobile){
+						max-width: 100%;
+						padding: 0px;
+					}
+
+				}
+			}
+
+			.double_text {
+				margin-top: 50px;
+				margin-bottom: 50px;
+
+				@media all and (max-width:$medium){
+					margin-top: 20px;
+					margin-bottom: 0px;
+
+					ul {
+						li {margin-bottom: 10px;}
+					}
+				}
+
+				@media all and (max-width:$small){
+					h2 {margin: 20px 0;}
+
+					ul {
+						li {
+							font-size: 15px;
+							line-height: 20px;
+						}
+					}
+				}
+
+				@media all and (max-width:$mobile){
+					margin-top: 0px;
+
+					ul {
+						li {
+							font-size: 17px;
+							line-height: 20px;
+						}
+					}
+				}
+
+				p {margin-top: 0;}
+				ul {margin-bottom: 15px;}
+
+				.left {padding-right: 0px;}
+				.right {
+					padding-left: 60px;
+
+					@media all and (max-width:$medium){padding-right: 60px;}
+					@media all and (max-width:$small){
+						margin-top:30px;
+						padding-left: 15px;
+						padding-right: 0px;
+					}
+					@media all and (max-width:$mobile){margin-top:25px;}
+				}
+			}
+		}
+
+	}
+}
+
+.reviews_slider {
+
+	position: relative;
+	border-top: solid 1px #c8e099;
+	border-bottom: solid 1px #c8e099;
+	margin: 50px 0 40px 0;
+	padding: 40px 0;
+
+	@media all and (max-width:$medium){margin: 70px 0 40px 0;}
+	@media all and (max-width:$small){
+		margin: 40px 0 35px 0;
+		padding: 30px 0 60px 0;
+	}
+	@media all and (max-width:$mobile){
+		margin: 75px 0 35px 0;
+		// padding: 30px 0 85px 0;
+		padding: 30px 0 35px 0;
+	}
+
+	&.green_arrows {
+		.flex-direction-nav {
+			.flex-prev {
+
+				@media all and (max-width:$small){
+					// top: 230px;
+					// left: 150px;
+					top: 50%;
+					left: 0;
+				}
+
+				@media all and (max-width:$mobile){left: 0px;}
+
+			}
+			.flex-next {
+
+				@media all and (max-width:$small){
+					// top: 230px;
+					// right: 150px;
+					top: 50%;
+					right: 0;
+				}
+
+				@media all and (max-width:$mobile){right: 0px;}
+
+			}
+		}
+	}
+
+	ul {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	li {
+		margin: 0 !important;
+		&:before {
+			content: '' !important;
+			margin: 0 !important;
+		}
+	}
+
+	.slide {
+
+		position: relative;
+
+		.nested_slider {
+			position: relative;
+			float:left;
+			margin: 0 40px 0 100px;
+
+			a {
+				border: none;
+
+				img {
+					border: solid 1px #92c133;
+
+					@media all and (max-width:$small){
+						height: 270px;
+					}
+				}
+			}
+
+			@media all and (max-width:$medium){margin: 0 40px 0 70px;}
+			@media all and (max-width:$small){
+				margin: 0 auto;
+				float: none;
+			}
+		}
+
+		h2 {
+			margin-top: 0;
+
+			@media all and (max-width:$small){
+				text-align:center;
+				margin-bottom: 30px;
+			}
+		}
+
+		.review_content {
+			// float: left;
+			// width: 510px;
+			width: 810px;
+			margin: 0 auto;
+
+			.review_text {
+				font-size: 15px;
+				line-height: 20px;
+
+				@media all and (max-width:$small){
+					font-size: 14px;
+					line-height: 17px;
+				}
+			}
+
+			.review_job {
+				font-size: 13px;
+				line-height: 16px;
+				padding-top: 10px;
+
+				@include font-circe('Circe-Regular');
+
+				@media all and (max-width:$small){
+					font-size: 14px;
+					line-height: 17px;
+				}
+			}
+
+			@media all and (max-width:$small){
+				width: 500px;
+				float: none;
+				// margin: 55px auto 0 auto;
+				margin: 25px auto 0 auto;
+			}
+
+			@media all and (max-width:$mobile){
+				width: auto;
+				margin: 25px 40px 0 40px;
+			}
+		}
+	}
+
+	.nested_slider {
+		width:237px;
+
+		@media all and (max-width:$small){width:193px;}
+	}
+}
+
+.section_content {
+	.geography_text {
+
+		h2 {
+			margin-top: 0;
+
+			@media all and (max-width:$small){margin-bottom: 15px;}
+			@media all and (max-width:$mobile){
+				margin-top: 20px;
+				display: inline-block;
+			}
+		}
+
+		.geography_text_wrap {
+			@media all and (max-width:$mobile){
+				margin: 0 auto;
+				width:280px;
+			}
+		}
+
+		table {
+			tbody {
+				tr {
+					border-bottom: none;
+
+					td {
+						font-size: 17px;
+						line-height: 25px;
+
+						&:first-of-type {
+							padding: 0 20px 15px 0;
+
+							@media all and (max-width:$medium){padding: 0 10px 10px 0;}
+							@media all and (max-width:$mobile){padding: 0 3px 10px 0;}
+						}
+						&:last-of-type {
+							padding: 0 0 15px 15px;
+
+							@media all and (max-width:$medium){padding: 0 0 10px 10px;}
+							@media all and (max-width:$mobile){padding: 0 0 10px 3px;}
+						}
+
+						@media all and (max-width:$small){
+							font-size: 14px;
+							line-height: 17px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.geography_map {
+		@media all and (max-width:$medium){
+			img {width:528px;}
+		}
+		@media all and (max-width:$small){
+			img {width:280px;}
+		}
+		@media all and (max-width:$mobile){
+			img {width:100%;}
+		}
+	}
+
+	.about_us_vacancy {
+		margin-top: 120px;
+		margin-bottom: 100px;
+
+		h2 {
+			margin-top:0;
+
+			@media all and (max-width:$small){max-width:270px}
+			@media all and (max-width:$mobile){margin-top:15px;}
+		}
+		h3 {
+			text-shadow: none;
+			font-size: 20px;
+
+			a {background-position: center 1.05em;}
+		}
+
+		.vacancy_text {
+			padding-right:50px;
+			@media all and (max-width:$mobile){padding-right:15px;}
+		}
+		.vacancy_image {
+			padding-top:5px;
+
+			img {
+				@media all and (max-width:$small){
+					width: 180px;
+					margin-left:-50px;
+				}
+				@media all and (max-width:$mobile){margin-left:0px;}
+			}
+		}
+
+		@media all and (max-width:$medium){margin-bottom: 80px;}
+		@media all and (max-width:$small){
+			margin-bottom: 60px;
+			margin-top: 90px;
+		}
+		@media all and (max-width:$mobile){margin-bottom: 0px;}
+	}
+}
+
+.companies_by_country_wrap {
+
+	h2 {
+		margin-bottom: 30px;
+
+		@media all and (max-width:$small){
+			width: 550px;
+			margin-bottom: 20px;
+		}
+		@media all and (max-width:$mobile){width:100%;}
+	}
+
+	.companies_by_country {
+		.country_wrap {
+			width: 265px;
+			padding: 0 25px 0 0;
+			float: left;
+
+			@media all and (max-width:$small){
+				width: 275px;
+				padding: 0 35px 0 0;
+			}
+
+			.country_title {
+				font-size: 17px;
+				line-height: 20px;
+
+				@include font-circe('Circe-Bold');
+
+				@media all and (max-width:$mobile){margin-bottom:5px;}
+			}
+
+			p {
+				margin: 0 0 10px 0;
+				line-height: 20px;
+			}
+
+			@media all and (max-width:$mobile){
+				margin-bottom:10px;
+				width:100%;
+			}
+		}
+	}
+}
+
+.about_us_comp_slider {
+	.companies_front {
+		margin: 50px 0 0 0;
+
+		@media all and (max-width:$medium){margin: 25px 0 0 0;	}
+	}
+}
+
+.not_front {
+	.footer {
+		&.page_banner_footer {
+			margin-top: 80px;
+
+			@media all and (max-width:$medium){margin-top: 65px;}
+			@media all and (max-width:$mobile){margin-top: 40px;}
+		}
+	}
+}
